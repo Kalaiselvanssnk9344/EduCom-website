@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    
+    <div class="main_container common_container">
+        <!-- navbar  -->
+        <nav>
+            <div class="app_title">EDUCOM</div>
+            <div class="currentpage_title_to_icons">
+                <div class="currentpage_title">DASHBOARD</div>
+                <div class="icons_container">
+                    <div class="icon_1"><i class="fa-solid fa-magnifying-glass search_icon"></i></div>
+                    <div class="icon_2"><i class="fa-regular fa-message message_icon"></i></div>
+                    <div class="icon_3"><i class="fa-regular fa-bell bell_icon"></i></div>
+                    <div class="icon_4">
+                        <div class="language_title">ENGLISH</div>
+                        <div class="drop_down_icon"><i class="fa-solid fa-angle-down down_arrow_icon"></i></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="left_and_right_conatiner">
+
+            <!-- left bar -->
+
+            <div class="left_bar">
+                <div class="image_container">
+                    <div class="image_holder">
+                        <img src="/Images/man-character.avif" alt="">
+                    </div>
+                </div>
+                <div class="left_bar_name">KALAISELVAN S</div>
+                <div class="profession_student">INFORMATION TECHNOLOGY</div>
+                <div class="nav_buttons">
+                    <div class="button_container active">
+                        <span>
+                            <i class="fa-regular fa-id-card id_card_icon"></i>
+                        </span>
+                        <a href="#dashboard_page" class="nav_left_bar ">Dashboard</a>
+                    </div>
+                    <div class="button_container">
+                        <i class="fa-regular fa-chart-bar result_icon"></i>
+                        <a href="#result_page" class="nav_left_bar">Results</a>
+                    </div>
+                    <div class="button_container">
+                        <i class="fa-regular fa-newspaper attendance_icon"></i>
+                        <a href="#attendance_page" class="nav_left_bar">Attendance</a>
+                    </div>
+                    <div class="button_container">
+                        <i class="fa-solid fa-person-chalkboard staff_icon"></i>
+                        <a href="#staff_page" class="nav_left_bar">Staff</a>
+                    </div>
+                    <div class="button_container ">
+                        <i class="fa-solid fa-gear settings_icon"></i>
+                        <a href="#settings_page" class="nav_left_bar">Settings</a>
+                    </div>
+                </div>
+                <div class="sign_out_container">
+                        <i class="fa-solid fa-arrow-right-from-bracket sign_out_icon"></i>
+                        <a href="login.html">Click to sign out</a>
+                </div>
+            </div>
+
+            <!-- .right_bar -->
+
+            <div class="right_bar">
+
+                <!-- Dashboard -->
+                <div id="dashboard_page">
+
+                    <div class="congrats_message">
+                    <span>
+                        Great effort so far Kalai ! Keep up the hard work, 
+                        and with  a bit more focus on your attendance, 
+                        you’re sure to reach your full potential ! 
+                    </span>
+                    <i class="fa-solid fa-xmark xmark"></i>
+                </div>
+                <div class="all_progress_container">
+                    <div class="overall_performance_container">
+                        <div class="overall_title">Overall performance</div>
+                        <div class="overall_desc">
+                            Course Completion rate
+                        </div>
+                        <div class="circle_progress_container">
+
+                        <div class="skill_op">
+        
+                                    <div class="outer_box_op">
+                                        <div class="box_op">
+                                        <div id="number_op">88%</div>
+                                    </div>
+                                </div>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px" class="svg_op"> 
+                                <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="circle_op"/>
+                            </svg>
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="first_three_courses_container">
+                        <div class="course_title_and_spinner">
+                            <div class="course_title ">Total enroll courses</div>
+                            <div class="spinner total_enroll_spin">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="course_title_and_spinner">
+                            <div class="course_title ">Course completed</div>
+                            <div class="spinner course_spin">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="course_title_and_spinner">
+                            <div class="course_title ">Hours spent</div>
+                            <div class="spinner hours_spin">
+                                <span>88</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="second_three_courses_container">
+                        <div class="course_title_and_spinner">
+                            <div class="course_title">Live class attended</div>
+                            <div class="spinner live_class_spin">
+                                <span>25</span>
+                            </div>
+                        </div>
+                        <div class="course_title_and_spinner">
+                            <div class="course_title">Quiz practised</div>
+                            <div class="spinner quiz_spin">
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="course_title_and_spinner">
+                            <div class="course_title ">Assignment done</div>
+                            <div class="spinner assignment_spin">
+                                <span>10</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="upcoming_to_notification_container">
+                    <div class="upcoming_container">
+                        <div class="upcoming_title">Upcoming classes</div>
+                        <div class="class_container">
+                            <div class="class_title_container">
+                                <div class="class_title">INTEGRAL CALCULAS</div>
+                                <div class="class_subject">MATHS</div>
+                                <div class="class_staff">By Ramesh</div>
+                            </div>
+                            <div class="timing_container">
+                                <span>25th Jun, 2025 : 12.00PM</span>
+                            </div>
+                            <div class="join_container">
+                                <i class="fa-solid fa-play play_icon"></i>
+                                <span>Join</span>
+                            </div>
+                        </div>
+
+                        <div class="class_container">
+                            <div class="class_title_container">
+                                <div class="class_title">FUNCTIONS</div>
+                                <div class="class_subject">DBMS</div>
+                                <div class="class_staff">By Deepa</div>
+                            </div>
+                            <div class="timing_container">
+                                <span>26th Jun, 2025 : 12.00PM</span>
+                            </div>
+                            <div class="join_container">
+                                <i class="fa-solid fa-play play_icon"></i>
+                                <span>Join</span>
+                            </div>
+                        </div>
+
+                        <div class="class_container">
+                            <div class="class_title_container">
+                                <div class="class_title">String</div>
+                                <div class="class_subject">DSA</div>
+                                <div class="class_staff">By Sam</div>
+                            </div>
+                            <div class="timing_container">
+                                <span>27th Jun, 2025 : 12.00PM</span>
+                            </div>
+                            <div class="join_container">
+                                <i class="fa-solid fa-play play_icon"></i>
+                                <span>Join</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification_container">
+                        <div class="streak_container">
+                            <div class="streak_title">
+                                5 days without a break
+                            </div>
+                            <div class="streak_desc">
+                                The record is 16 days without a break
+                            </div>
+                            <div class="fire_and_day_container">
+                                <div class="fire_and_day_holder">
+                                    <div class="fire">🔥</div>
+                                    <div class="day_holder">Sun</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire">🔥</div>
+                                    <div class="day_holder">Mon</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire">🔥</div>
+                                    <div class="day_holder">Tue</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire">🔥</div>
+                                    <div class="day_holder">Wed</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire">🔥</div>
+                                    <div class="day_holder">Thu</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire grey_fire">🔥</div>
+                                    <div class="day_holder ">Fri</div>
+                                </div>
+                                <div class="fire_and_day_holder">
+                                    <div class="fire grey_fire">🔥</div>
+                                    <div class="day_holder">Sat</div>
+                                </div>
+                            </div>
+                            <div class="class_to_assignment_completed_container">
+                                <div class="class_covered">* 6 class covered</div>
+                                <div class="assingment_completed_holder">* 4 assignment completed</div>
+                            </div>
+                        </div>
+                        <div class="assingment_details_container">
+                            <div class="assingment_title">Assignment </div>
+                            <div class="assignment_notifi_container">
+                                <div class="assign_notifi_subject_holder">
+                                    <div class="ass_notifi_title">Design & Analysis of algorithms</div>
+                                </div>
+                                <div class="submit_before_assingment">
+                                    <span class="class_subject">DSA</span>
+                                    <span class="assign_ends_time">
+                                        * Submit before : 28th Jun, 2025 : 12:00PM
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                </div>
+
+
+
+                <!-- Result -->
+                <div id="result_page">
+                    <div class="your_progress_container">
+                        <div class="your_progress_title">YOUR PROGRESS</div>
+                        <div class="all_sem_progress_container">
+                            <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill_sem1">
+        
+                                    <div class="outer_box_sem1">
+                                        <div class="box_sem1">
+                                            <div id="number_sem1" style="font-size: 18px;">0 </div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px" class="svg_sem1">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem1_circle" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 1 (CGPA)</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_sem2" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px" >
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem2_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 2 (CGPA)</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                           <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_sem3" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem3_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 3 (CGPA)</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_sem4" style="font-size: 18px;" >0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem4_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 4 (CGPA)</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_sem5" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem5_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 5 (CGPA)</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_sem6" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="sem6_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">SEM 6 (CGPA)</div>
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <div class="subject_and_score_title">SUBJECT & SCORES</div>
+                    <div class="subjectscore_and_profilecard_container">
+                        <div class="subjectscore_container">
+                            <div class="subject_table_header_container">
+                                <div class="header_1">S.No</div>
+                                <div class="header_1">Subject</div>
+                                <div class="header_2">Score</div>
+                                <div class="header_3">Grade</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">1.</div>
+                                <div class="header_1_value">MATHS</div>
+                                <div class="header_2_value">94/100</div>
+                                <div class="header_3_value">O+</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">2.</div>
+                                <div class="header_1_value">DSA</div>
+                                <div class="header_2_value">88/100</div>
+                                <div class="header_3_value">A+</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">3.</div>
+                                <div class="header_1_value">OS</div>
+                                <div class="header_2_value">86/100</div>
+                                <div class="header_3_value">A+</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">4.</div>
+                                <div class="header_1_value">DBMS</div>
+                                <div class="header_2_value">84/100</div>
+                                <div class="header_3_value">A+</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">5.</div>
+                                <div class="header_1_value">OOAD</div>
+                                <div class="header_2_value">81/100</div>
+                                <div class="header_3_value">A+</div>
+                            </div>
+
+                        </div>
+
+                        <div class="profilecard_container">
+                            <div class="profilecard_title">PROFILE CARD</div>
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">NAME : </div>
+                                <div class="name_value_profile_holder">KALAISELVAN S</div>
+                            </div>
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">DOB : </div>
+                                <div class="name_value_profile_holder">28/06/2006</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">BATCH : </div>
+                                <div class="name_value_profile_holder">2023-2027</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">DEGREE : </div>
+                                <div class="name_value_profile_holder">BTECH</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">BRANCH : </div>
+                                <div class="name_value_profile_holder">INFORMATION TECH</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">YEAR : </div>
+                                <div class="name_value_profile_holder">PRE-FINAL</div>
+                            </div>
+                            
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">CGPA : </div>
+                                <div class="name_value_profile_holder">8.2/10 (Till 6th Sem)</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Attendance -->
+                <div id="attendance_page">
+                    
+                    <div class="your_progress_container">
+                        <div class="your_progress_title overview_title">OVERVIEW</div>
+                        <div class="all_semprogress_and_profile_card_container">
+                            <div class="all_sem_progress_container attendance_progress">
+                            <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill_sem1">
+        
+                                    <div class="outer_box_sem1">
+                                        <div class="box_sem1">
+                                            <div id="number_attend1" style="font-size: 18px;">0 </div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px" class="svg_sem1">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="attend1_circle" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">Total working days</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                            <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_attend2" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px" >
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="attend2_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">Total present days</div>
+                        </div>
+
+                        <div class="sem_progress_container_1">
+                           <div class="sem_1_spinner">
+                                <div class="skill">
+        
+                                    <div class="outer">
+                                        <div class="box">
+                                            <div id="number_attend3" style="font-size: 18px;">0</div>
+                                        </div>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                                        <circle cx="70" cy="70" r="60" stroke-linecap="roun" class="attend3_circle"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="sem_1_title_holder">Total absent days</div>
+                        </div>
+
+                        <div class="attendance_sem_spinner_summary">
+                            <div class="summary_attendance_title">SUMMARY</div>
+                            <div class="days_and_value_title_container">
+                                <div class="days_title_holder">WORKING DAYS : </div>
+                                <div class="days_value_holder">100</div>
+                            </div>
+                            <div class="days_and_value_title_container">
+                                <div class="days_title_holder">PRESENT DAYS : </div>
+                                <div class="days_value_holder">90</div>
+                            </div>
+                            <div class="days_and_value_title_container">
+                                <div class="days_title_holder">ABSENT DAYS : </div>
+                                <div class="days_value_holder">10</div>
+                            </div>
+                            <div class="days_and_value_title_container">
+                                <div class="days_title_holder">EXAM LEAVES : </div>
+                                <div class="days_value_holder">5</div>
+                            </div>
+                            <div class="min_attendance_percentage">* Min required attendance : 75%</div>
+                        </div>
+                    </div>
+
+                    <div class="profile_card_attendance_container">
+                            <div class="profilecard_title">PROFILE CARD</div>
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">NAME : </div>
+                                <div class="name_value_profile_holder">KALAISELVAN S</div>
+                            </div>
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">DOB : </div>
+                                <div class="name_value_profile_holder">28/06/2006</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">BATCH : </div>
+                                <div class="name_value_profile_holder">2023-2027</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder">DEGREE : </div>
+                                <div class="name_value_profile_holder">BTECH</div>
+                            </div>
+
+                    </div>
+
+                    </div>
+                </div>
+
+
+                <div class="subject_wise_attendance_and_monthly_attendance_container">
+                    <div class="subject_wise_attendance_container">
+                        <div class="subject_wise_attendance_title">SUBJECT WISE ATTENDANCE</div>
+                        <div class="subject_wise_header_and_value_table">
+                            <div class="subject_table_header_container">
+                                <div class="header_1">S.No</div>
+                                <div class="header_1">Subject</div>
+                                <div class="header_2">Total classes</div>
+                                <div class="header_3">Present</div>
+                                <div class="header_3">Absent</div>
+                                <div class="header_3">Attendance %</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">1.</div>
+                                <div class="header_1_value">MATHS</div>
+                                <div class="header_2_value">60</div>
+                                <div class="header_3_value">55</div>
+                                <div class="header_3_value">5</div>
+                                <div class="header_3_value">91.67%</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">2.</div>
+                                <div class="header_1_value">DSA</div>
+                                <div class="header_2_value">55</div>
+                                <div class="header_3_value">49</div>
+                                <div class="header_3_value">6</div>
+                                <div class="header_3_value">89.09%</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">3.</div>
+                                <div class="header_1_value">OS</div>
+                                <div class="header_2_value">52</div>
+                                <div class="header_3_value">47</div>
+                                <div class="header_3_value">5</div>
+                                <div class="header_3_value">90.38%</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">4.</div>
+                                <div class="header_1_value">DBMS</div>
+                                <div class="header_2_value">28</div>
+                                <div class="header_3_value">26</div>
+                                <div class="header_3_value">2</div>
+                                <div class="header_3_value">92.86%</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">5.</div>
+                                <div class="header_1_value">OOAD</div>
+                                <div class="header_2_value">55</div>
+                                <div class="header_3_value">49</div>
+                                <div class="header_3_value">6</div>
+                                <div class="header_3_value">89.09%</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="monthly_attendance_container">
+                        <div class="monthly_attendance_title">MONTHLY ATTENDANCE</div>
+                        <div class="monthly_name_and_values_table_container">
+                            <div class="month_title_june">JUNE - 2025</div>
+                            <div class="name_and_values_container ">
+                                <div class="name_profile_holder month__name_and_values">WORKING DAYS : </div>
+                                <div class="name_value_profile_holder">24</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">PRESENT DAYS : </div>
+                                <div class="name_value_profile_holder">20</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">ABSENT DAYS : </div>
+                                <div class="name_value_profile_holder">02</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">HOLIDAYS : </div>
+                                <div class="name_value_profile_holder">04</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">APPROVED DAYS : </div>
+                                <div class="name_value_profile_holder">02</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">EXAM LEAVES : </div>
+                                <div class="name_value_profile_holder">05</div>
+                            </div>
+
+                            <div class="name_and_values_container">
+                                <div class="name_profile_holder month__name_and_values">ATTENDANCE % : </div>
+                                <div class="name_value_profile_holder">88.81%</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+
+                <!-- Staff -->
+                <div id="staff_page">
+                    <div class="staff_allocated_title">STAFF ALLOCATED</div>
+                    <div class="staff_allocated_table_container">
+                        <div class="subject_wise_header_and_value_table">
+                            <div class="subject_table_header_container">
+                                <div class="header_1">S.No</div>
+                                <div class="header_1">Subject Code</div>
+                                <div class="header_2">Subject</div>
+                                <div class="header_3">Staff</div>
+                                <div class="header_3">Staff email</div>
+                                <div class="header_3">Type</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">1.</div>
+                                <div class="header_1_value">CS3501</div>
+                                <div class="header_2_value">Maths</div>
+                                <div class="header_3_value">Mr. Ramesk K</div>
+                                <div class="header_3_value" style="color:blue ">ramesh@edu.com</div>
+                                <div class="header_3_value">Theory</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">2.</div>
+                                <div class="header_1_value">CS3502</div>
+                                <div class="header_2_value">DBMS</div>
+                                <div class="header_3_value">Mrs. Deepa S</div>
+                                <div class="header_3_value" style="color:blue ">deepa@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">3.</div>
+                                <div class="header_1_value">CS3503</div>
+                                <div class="header_2_value">OS</div>
+                                <div class="header_3_value">Mr. Prased J</div>
+                                <div class="header_3_value" style="color:blue ">prasad@edu.com</div>
+                                <div class="header_3_value">Theory</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">4.</div>
+                                <div class="header_1_value">CS3504</div>
+                                <div class="header_2_value">DS Lab</div>
+                                <div class="header_3_value">Mr. Hari A</div>
+                                <div class="header_3_value" style="color:blue ">hari@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">5.</div>
+                                <div class="header_1_value">CS3505</div>
+                                <div class="header_2_value">DSA</div>
+                                <div class="header_3_value">Mr. Sam L</div>
+                                <div class="header_3_value" style="color:blue ">sam@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">6.</div>
+                                <div class="header_1_value">CS3506</div>
+                                <div class="header_2_value">OOAD</div>
+                                <div class="header_3_value">Mr. Arun A</div>
+                                <div class="header_3_value" style="color:blue ">arun@edu.com</div>
+                                <div class="header_3_value">Theory</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">7.</div>
+                                <div class="header_1_value">CS3507</div>
+                                <div class="header_2_value">CS</div>
+                                <div class="header_3_value">Mr. Zenith S</div>
+                                <div class="header_3_value" style="color:blue ">zenith@edu.com</div>
+                                <div class="header_3_value">Theory</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">8.</div>
+                                <div class="header_1_value">CS3508</div>
+                                <div class="header_2_value">Fullstack</div>
+                                <div class="header_3_value">Mr. Kalai SK</div>
+                                <div class="header_3_value" style="color:blue ">kalai@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">9.</div>
+                                <div class="header_1_value">CS3509</div>
+                                <div class="header_2_value">MERN STACK</div>
+                                <div class="header_3_value">Mr. Kavan S</div>
+                                <div class="header_3_value" style="color:blue ">kavan@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                            <div class="subject_table_value_container">
+                                <div class="header_1_value">10.</div>
+                                <div class="header_1_value">CS3510</div>
+                                <div class="header_2_value">MEAN STACK</div>
+                                <div class="header_3_value">Mr. Kavin SK</div>
+                                <div class="header_3_value" style="color:blue ">kavin@edu.com</div>
+                                <div class="header_3_value">Practical</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <!-- Settings -->
+                <div id="settings_page">
+                    <div class="academic_title">ACADEMIC INFO</div>
+                    <div class="staff_allocated_table_container">
+                        <div class="subject_wise_header_and_value_table">
+                            <div class="subject_table_header_container academic_name_and_value">
+                                <div class="header_1 academic_name">NAME : </div>
+                                <div class="header_2 academic_value">KALAISELVAN S</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">DATE-OF-BIRTH : </div>
+                                <div class="header_2_value academic_value">28/06/2006</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">COLLEGE : </div>
+                                <div class="header_2_value academic_value">
+                                    SRI KRISHNA COLLEGE OF ENGINNERING AND TECHNOLOGY
+                                </div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">DEGREE : </div>
+                                <div class="header_2_value academic_value">BACHELOR OF TECHNOLOGY</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">BRANCH : </div>
+                                <div class="header_2_value academic_value">INFORMATION TECHNOLOGY</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">BATCH : </div>
+                                <div class="header_2_value academic_value">2023</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">YEAR : </div>
+                                <div class="header_2_value academic_value">PRE-FINAL</div>
+                            </div>
+
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">CGPA : </div>
+                                <div class="header_2_value academic_value">8.2/10 (Till 6th Sem)</div>
+                            </div>
+                            
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">ATTENDANCE % : </div>
+                                <div class="header_2_value academic_value">88.81% (min > 75%)</div>
+                            </div>
+
+                            
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">STREAK : </div>
+                                <div class="header_2_value academic_value">16 days</div>
+                            </div>
+
+                            
+                            <div class="subject_table_value_container academic_name_and_value">
+                                <div class="header_1_value academic_name">YEAR OF GRADUATION : </div>
+                                <div class="header_2_value academic_value">2027</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+
+
+                
+            </div>
+
+        </div>
+
+
+    </div>
+  
+
+
+
+
+
+
+
+
+    <script src="/js/student.js"></script>
+</body>
+</html>
+
+
+
+
+ <!-- <div class="skill">
+        
+        <div class="outer_box">
+            <div class="box">
+                <div id="number">88%</div>
+            </div>
+        </div>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <circle cx="80" cy="80" r="70" stroke-linecap="roun" />
+        </svg>
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    let number = document.getElementById("number");
+    let counter = 0;
+
+    setInterval(() =>{
+        if(counter == 88){
+            clearInterval();
+        }
+        else{
+            counter += 1;
+            number.innerHTML = counter + "%";
+        }
+    }, 22.72);
+
+</script> -->
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="button active">Button 1</div>
+        <div class="button">Button 2</div>
+        <div class="button">Button 2</div>
+        <div class="button">Button 2</div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+
+    let button = document.querySelectorAll(".button");
+
+    button.forEach(btn => {
+        btn.addEventListener("click", () =>{
+            button.forEach(b => {
+                b.classList.remove('active');
+            });
+
+            btn.classList.add('active');
+        });
+    });
+
+
+</script> -->
+
